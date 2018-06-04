@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Simple PHP Code Editor</title>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+</head>
+<body>
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-md-6" id="editor-nav">
+                Edit your PHP Code here..
+                <span class="pull-right">
+                    <button class="btn btn-success" id="viewResult">Execute >> </button>
+                </span>
+            </div>
+            <div class="col-md-6" id="result-nav">
+                Result :
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6" id="editor">
+                <form>
+                    
+                    <!-- PLACE YOUR HOME URL HERE (WITH TRAILING SLASH) -->
+                    <!-- 
+                    EXAMPLE
+                    <input type="hidden" name="mainUrl" value="http://localhost:8080/simple-php-code-editor/"> 
+                    -->
+
+                    <input type="hidden" name="mainUrl" value="http://localhost:8080/">
+
+                    <textarea name="textarea" class="form-control"><?php</textarea>
+                </form>
+            </div>
+            <div class="col-md-6" id="result"></div>
+        </div>
+
+    </div>
+
+    <script src="js/core.js"></script>
+</body>
+</html>

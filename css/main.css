@@ -1,0 +1,19 @@
+@import url('bootstrap.min.css');
+
+body{
+    font-family: Roboto, Ubuntu, Arial, sans-serif;
+    padding-top: 10%;
+}
+
+#editor textarea, #result{
+    height: 400px;
+    margin-top: 10px;
+    font-family: monospace;
+    resize: none;
+    overflow-y: scroll;
+}
+
+#result{
+    font-family: sans-serif;
+    border: 1px solid #4b97b3;
+}
